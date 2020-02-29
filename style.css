@@ -1,0 +1,110 @@
+/* 
+STYLE GOALS:
+2. get header background to cover entire header without using negative margin
+3.  Import some fonts off google fonts using @font-face in stylesheet
+4.  media queries - item spacing for screen on laptop only good up to 843px wide, make dynamic for my laptop and iphone
+5. Why is header requiring text-align? Why wont align-items work to center heading.
+
+LONGTERM 
+1. Bootstrap or Sass?
+*/
+/* page wide styling  */
+body {
+    background-color: cadetblue;
+}
+
+#all-content {
+    font-family: 'Calistoga', cursive;
+    display: grid;
+    height: 100%;
+    margin: auto;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* header styling  */
+header {
+    grid-area: 1 / 1 / 2 / 4;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-image: url('https://c1.staticflickr.com/1/460/20189357449_cdb6736480_b.jpg');
+    background-size: cover;
+    margin: -8px;
+}
+
+/* description stylings */
+
+#description {
+    grid-area: 3 / 1 / 5 / 4;
+    text-align: center;
+}
+
+#description ul {
+    text-align: start;
+    width: 80%;
+}
+/* body stylings  */
+#randomizers {
+    grid-area: 5 / 1 / 8 / 4;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#randomizers section {
+    border: 4px black solid;
+    padding: 0 10px;
+    margin: 0 auto 25px auto;
+    background-color: mediumslateblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+
+
+/* scramble button  */
+
+#scramble {
+  grid-area: 8 / 2 / 9 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#scramble button {
+    border: 2px black solid;
+    height: 55%;
+    width: 53%;
+    font-weight: bold;
+}
+
+#scramble-text {
+    width: 80%;
+}
+
+.bottom-row {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.section-checkbox {
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 0.3rem;
+}
+
+.bottom-row h3 {
+    text-align: center;
+}
+
+#key-display-text {
+    text-align: center;
+}

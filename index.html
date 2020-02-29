@@ -1,0 +1,92 @@
+<!-- 
+    DOCUMENT GOALS:
+    3. why does script element work better at end of page rather than in head with a defer attr?
+    4. utilize class selectors on more elements
+    5. Incorporate some dropdown menus or checkboxes to hide certain randomize sections? -->
+  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+    <title>Triad Pair Generator</title>
+</head>
+<body>
+<div id="all-content">
+    <header>
+        <h1>Triad Pair Generator</h1>
+    </header>
+    <div id="description">
+       <p>Welcome to the Random Triad Pair Generator! <br> This is a practice tool designed to randomize the different combinations of ways you can apply hexatonic scales or triad pairs. <br>
+        <ul>
+            <li>Set the vibe with the given key and mode, perhaps using a loop pedal</li>
+            <li>Find the two triads that fit in that mode/shade given the triad pair constraints</li>
+            <li>Practice that triad pair using the given melodic and rhthmic patters.  The rythym can be a subdivision or grouping - its your pick!</li>
+            <li>Click the lock checkbox to keep that variable constant!</li>
+        </ul> 
+      </p>
+    </div>
+    <div id="randomizers">
+        <section id ="key-section">
+           <h2>Key Center/Fundamental</h2>
+           <div class="bottom-row">
+              <div class="section-checkbox">
+                <input type="checkbox" id="key-input" name="lock" value="">
+                <label for="key-input">Lock</label>
+               </div>
+              <h3 id="key-display-text"></h3>
+           </div>
+        </section>
+        <section id ="mode-section">
+            <h2>Mode/Chord Quality/Shade</h2>
+            <div class="bottom-row">
+              <div class="section-checkbox">
+                  <input type="checkbox" id="mode-input" name="lock" value="">
+                  <label for="mode-input">Lock</label>
+                </div>
+              <h3 id="mode-display-text"></h3>
+            </div>
+        </section>
+        <section id ="triad-pair-section">
+                <h2>Triad Pair Type</h2>
+                <div class="bottom-row">
+                    <div class="section-checkbox">
+                        <input type="checkbox" id="triad-input" name="lock" value="">
+                        <label for="triad-input">Lock</label>
+                    </div>
+                    <h3 id="triad-display-text"></h3>
+                </div>
+        </section>
+        <section id ="melodic-section">
+                <h2>Melodic Pattern</h2>
+                <div class="bottom-row">
+                    <div class="section-checkbox">
+                        <input type="checkbox" id="medlodic-input">
+                        <label for="medlodic-input">Lock</label>
+                    </div>
+                    <h3 id="melodic-display-text"></h3>
+                </div>
+        </section>
+        <section id ="rhythm-section">
+            <h2>Rhythmic Pattern</h2>
+            <div class="bottom-row">
+                <div class="section-checkbox">
+                    <input type="checkbox" id="rhythm-input">
+                    <label for="rhythm-input">Lock</label>
+                </div>
+                <h3 id="rhythm-display-text"></h3>
+            </div>
+        </section>
+    </div>
+    <div id="scramble">
+        <button><span id="scramble-text">Scramble!</span></button>
+    </div>
+
+</div>
+<script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
