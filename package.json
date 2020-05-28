@@ -1,0 +1,17 @@
+{
+	"name": "random-triad-pair-generator",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"hotreload": "nodemon server.js"
+	},
+	"author": "JDM",
+	"license": "MIT",
+	"dependencies": {
+		"uuid": "^8.1.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.4"
+	}
+}
