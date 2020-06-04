@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "server.js",
 	"scripts": {
-		"hotreload": "nodemon server.js"
+		"hotreload": "nodemon server",
+		"start": "node server"
 	},
 	"author": "JDM",
 	"license": "MIT",
